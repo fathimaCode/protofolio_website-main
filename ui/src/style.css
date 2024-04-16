@@ -1,0 +1,370 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --primary-color:#7076e0;
+    --white-color:#ffffff;
+    --black-color:#000000;
+    --green-color:#1e770c;
+  
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  body{
+    background-color: var(--primary-color);
+    
+  }
+  .bg_home{
+    height: 100%;
+    width: 100%;
+   
+  }
+  .header_bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .logo{
+    margin: 1.5rem;
+    color: var(--white-color);
+    font-size: 1.5em;
+  }
+ li a{
+    color: var(--white-color);
+  }
+  span{
+    font-style: italic;
+    margin-left: 1rem;
+  }
+  .menu{
+    font-size: 1.9em;
+    cursor: pointer;
+    
+  }
+  .menu a{
+    color: var(--black-color);
+  }
+  .menu:hover{
+    text-decoration: underline;
+  }
+  .menubar{
+    display: flex;
+  }
+  li{
+    padding: 1.5rem;
+    font-size: 1.5em;
+    color: var(--white-color);
+    cursor: pointer;
+    margin: 1.2rem;
+  }
+  li a:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  .main{
+    width: 100%;
+    
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .bg_image{
+    border-radius: 15px;
+   object-fit: cover;
+    margin: 5% auto;
+    
+  }
+  
+  .intro{
+    margin: 3.5rem;
+  }
+  .intro h2{
+    font-size: 3rem;
+    color: var(--white-color);
+    padding: 1rem;
+  }
+  .intro p{
+    text-align: justify;
+    line-height: 2;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    position: relative;
+  }
+  .floating_bg{
+    height: 400px;
+   border-radius: 15px;
+   margin: 60px 5px 0px 65px;
+   animation: floatAnimation 3s ease-in-out infinite alternate;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px); /* Adjust the value for desired floating height */
+    }
+  }
+
+  .login_card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px; 
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18); 
+    height: 700px;
+    margin: 15px;
+  }
+  .login_card h2{
+    color: var(--white-color);
+    margin: 50px 350px;
+    font-size: 2em;
+  }
+  input{
+    padding: 1.0rem;
+    width: 500px;
+    margin-left: 9.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .logBtn{
+    width: 180px;
+    padding: 0.8rem;
+    font-size: 1.5em;
+    margin-left: 300px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--white-color); 
+    cursor: pointer;
+  }
+  .logBtn:hover{
+    background-color: var(--primary-color);
+  }
+  .other_options{
+    margin-left: 80px;
+    margin-top: 80px;
+    font-size: 1.5em;
+   
+  }
+  .other_options  span{
+    color: var(--white-color);
+  }
+  .other_options a{
+    color: var(--white-color);
+    font-weight: 900;
+  }
+  .usersDetails{
+    color: var(--white-color);
+    margin-top: 45px;
+    font-size: 1.5em;
+  }
+ .pro_card{
+    width: 80%;
+    margin: 2% auto;
+    overflow: auto;
+    border-radius: 15px;
+    height: 850px;
+    font-size: 1.5em;
+    background-color: var(--white-color);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+
+  .pro_card h2{
+    text-align: center;
+    padding: 25px;
+  }
+ .pro_right{
+  margin: 5px;
+ }
+textarea{
+  margin: 10px 50px 10px 150px;
+  padding: 25px;
+  width: 500px;
+  
+}
+select{
+  margin: 5px 150px ;
+  padding: 15px;
+  width: 500px;
+}
+.pro_website_btn{
+  padding: 18px;
+  font-size: .8em;
+  margin-left: 650px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+}
+.pro_website_btn:hover{
+ background-color: var(--green-color);
+}
+.profileupload,.cvupload{
+  border: 1px solid black;
+  width: 500px;
+ 
+}
+.profileupload::before{
+  content: 'Upload Image: ';
+  font-weight: bold;
+}
+.cvupload::before{
+  content: 'Upload Resume: ';
+  font-weight: bold;
+}
+.colorpicker{
+  height: 100px;
+  width: 100px;
+  margin: 0px 150px 20px 150px;
+  padding: 10px;
+}
+.keySkillclass{
+  width: 100px;
+}
+.builder_forms{
+  display: flex;
+  
+}
+.skkill{
+  height: 250px;
+  overflow: auto;
+  width: 500px;
+  margin: 20px 150px;
+  border: 1px solid black;
+}
+.projectInfo{
+  margin-top: 35px;
+}
+.keySkillclass{
+  width: 100%;
+  height: 100%;
+}
+.addProject{
+  border: none;
+  padding: 10px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.builder_navbar{
+  display: flex;
+ padding: 20px;
+ justify-content: space-between;
+}
+.social a{
+  margin: 10px;
+}
+.builder_userInfo{
+  margin: 50px 50px;
+  display: flex;
+  
+}
+.builder_basicinfo{
+  margin-top: 100px;
+}
+.builder_basicinfo h2{
+  padding: 10px;
+}
+.builder_basicinfo h1{
+  font-size: 3em;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.builder_basicinfo h3{
+  font-size: 1.8em;
+  margin-left: 20px;
+}
+.builder_basicinfo p{
+  text-align: justify;
+  padding: 20px;
+}
+.builder_userimage{
+  padding: 50px;
+  margin: 50px 300px;
+  height: 800px;
+  width: 700px;
+  
+ 
+  
+}
+.abt{
+  font-size: 2em;
+}
+.builder_userimage img{
+  object-fit: cover;
+ 
+  border-radius: 15px;
+}
+.projectList{
+  background-color: var(--white-color);
+
+  height: 100vh;
+  overflow: auto;
+  
+}
+.projectList h2{
+  text-align: center;
+ 
+ font-size: 3.6em;
+ padding: 15px;
+}
+.gridItem{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 30px;
+  margin: 50px 250px;
+}
+.pro_builder_Cards{
+ border-radius: 15px;
+  height: 600px;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.pro_builder_Cards img{
+  width: 100%;
+  height: 350px;
+  padding: 10px;
+  object-fit: cover;
+
+}
+.pro_builder_Cards span{
+  padding: 5px;
+  text-align: justify;
+}
+.pro_Des{
+  overflow: auto;
+  height: 120px;
+  padding: 10px;
+}
+.tit{
+  padding: 5px;
+}
+@media screen and (max-width: 1630px) {
+  
+}
+
+.skill_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.skill_grid img{
+  margin: 10px;
+  padding: 10px;
+}

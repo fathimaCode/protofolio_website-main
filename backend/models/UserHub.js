@@ -1,0 +1,54 @@
+//user.js
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+let userHubSchema = new Schema({
+    name:{
+        type:String
+    },
+    email:{
+        type:String
+    },
+    profileImage:{
+        type:String
+    },
+    title:{
+        type:String
+    },
+    keySkill:{
+        type:String
+    },
+    aboutme:{
+        type:String
+    },
+    insta:{
+        type:String
+    },
+    link:{
+        type:String
+    },
+    bgcolor:{
+        type:String
+    },
+    gender:{
+        type:String
+    },
+    contact:{
+        type:String
+    },
+    programmingLanguage:{
+        type:String
+    },
+    cv:{
+        type:String
+    },
+    location:{
+        type:String
+    },
+    experience:{
+        type:String
+    },
+    userid:{
+        type:String
+    },
+})
+module.exports = mongoose.model('UserHub',userHubSchema)

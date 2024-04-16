@@ -1,0 +1,7 @@
+{
+    "env":{
+        "MONGO_USER":"fa_learn",
+        "MONGO_PASSWORD":"B1cH35WwH8UCa25H",
+        "MONGO_DB":"protofolio"
+    }
+}
